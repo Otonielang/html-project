@@ -1,0 +1,78 @@
+*{              /*Reseta todas as predefinicoes do navegador*/
+    margin: 0;
+    padding: 0;
+}
+html, body{     /*Define o tamanho da tela*/
+    height: 100%;
+    width: 100%;
+}
+
+
+.menu{      /*Estiliza o menu*/
+    display: flex;      /*Centraliza os elementos do menu*/
+    justify-content: right;        /*Centraliza os elementos do menu*/   
+    background-color: #ffffff;     /*Define a cor do menu*/
+    height: auto;       /*Define a altura do menu*/
+    list-style-type: none;      /*Remove a bolinha da lista*/
+    font-size: 20px;    /*Define o tamanho da fonte do menu*/
+}
+
+.menu li{         /*Estilizar os elementos LI do menu*/
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;       
+    margin: 10px 20px 10px 20px;      /*Define a margem dos elementos LI*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.connect{       /*Centraliza os elementos input e os agrupa*/
+    display: flex;
+    height: 100%;
+}
+input{          /*Define o tamanho e a cor do input*/   
+    border-radius: 5px;
+    width: 100%;
+    background-color: #919191;
+}
+
+
+
+button{
+    display: flex;
+    justify-content: center;
+
+}
+button:hover{       /*Define a cor do botao ao passar o mouse*/
+    background-color: #919191;
+    color: #ffffff;
+
+}
+.btn1{      /*Estiliza o botao Free Consultation*/
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 120px;
+    margin: 0 auto;
+}
+.btn2{      /*Estiliza o botao Send*/
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 60px;
+    margin: 0 auto;
+}
