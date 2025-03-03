@@ -17,62 +17,54 @@ html, body{     /*Define o tamanho da tela*/
     font-size: 20px;    /*Define o tamanho da fonte do menu*/
 }
 
-.menu li{         /*Estilizar os elementos LI do menu*/
-    background-color: #ffffff;
-    border-radius: 5px;
-    padding: 5px;       
-    margin: 10px 20px 10px 20px;      /*Define a margem dos elementos LI*/
+.menu li{     /*Estilizar os elementos LI do menu*/
+    background-color: #ffffff;/*Define a cor de fundo dos elementos LI*/
+    border-radius: 5px;         /*Define a curvatura da borda dos elementos LI*/
+    padding: 5px;               /*Define o tamanho do padding dos elementos LI*/
+    margin: 10px 20px 10px 20px;/*Define a margem dos elementos LI*/
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.connect{       /*Centraliza os elementos input e os agrupa*/
-    display: flex;
-    height: 100%;
+.connect{        /*Centraliza os elementos input e os agrupa*/
+    display: flex;              /*Centraliza os elementos input*/
+    height: 100%;               /*Define a altura do elemento*/
 }
-input{          /*Define o tamanho e a cor do input*/   
-    border-radius: 5px;
-    width: 100%;
-    background-color: #919191;
+.connect input{     /*Define o tamanho e a cor do input*/   
+    border: solid 1px #000000;/*Define o tipo da borda, o tamanho e a cor*/
+    border-radius: 5px;         /*Define a curvatura da borda do input*/
+    width: 100%;                /*Define o tamanho do input*/
+    background-color: #ffffff;      
+
+}
+.connect input:hover{  /*Define a cor do input ao passar o mouse*/
+    background-color: #919191;/*Define a cor do input ao passar o mouse*/
+
+
 }
 
 
 
-button{
-    display: flex;
-    justify-content: center;
+button{           /*Estiliza o botao*/
+    display: flex;              /*Cria um container flexivel*/
+    justify-content: center;    /*Centraliza o botao*/
 
 }
-button:hover{       /*Define a cor do botao ao passar o mouse*/
-    background-color: #919191;
-    color: #ffffff;
+button:hover{     /*Define a cor do botao ao passar o mouse*/
+    background-color: #919191;/*Define a cor do botao ao passar o mouse*/
+    color: #ffffff;           /*Define a cor da fonte do botao ao passar o mouse*/
 
 }
-.btn1{      /*Estiliza o botao Free Consultation*/
-    background-color: #ffffff;
-    border-radius: 10px;
-    width: 120px;
-    margin: 0 auto;
+.btn1{            /*Estiliza o botao Free Consultation*/
+    background-color: #ffffff;/*Define a cor do botao*/
+    border-radius: 10px;        /*Define a curvatura da borda do botao*/
+    width: 120px;               /*Define o tamanho do botao*/
+    margin: 0 auto;             /*Centraliza o botao*/
 }
-.btn2{      /*Estiliza o botao Send*/
-    background-color: #ffffff;
-    border-radius: 10px;
-    width: 60px;
-    margin: 0 auto;
+.btn2{           /*Estiliza o botao Send*/
+    background-color: #ffffff;/*Define a cor do botao*/
+    border-radius: 10px;        /*Define a curvatura da borda do botao*/
+    width: 60px;                /*Define o tamanho do botao*/
+    margin: 0 auto;             /*Centraliza o botao*/
 }
