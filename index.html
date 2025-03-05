@@ -4,7 +4,7 @@
 
 <head> 
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Pagina Html </title> <!--Titulo da página-->
     <link rel="shortcut icon" href="imagens/html.ico.ico" type="image/x-icon"> <!--Favicon da página home -->
     <link rel="stylesheet" href="css/style.css"> <!--CSS external file-->
@@ -83,12 +83,19 @@
     <footer>
         <div>
             <h2>Let's connect</h2>
-                <div class="connect"><!--Necessário inserir algumas box e um possível formulário-->
-                    <input type="text" placeholder=" Your name">
-                    <input type="email" placeholder=" Your e-mail">
-                    <input type="text" placeholder=" Your message">
+                <div class="container">
+                    <div class="left-column">
+                        <input type="text" placeholder=" Your name">
+                        <input type="email" placeholder=" Your e-mail">
+                    </div>
+                    <div class="rigth-column">
+                        <input type="text" placeholder=" Your message">
+                    </div>
                 </div>
-            <button class="btn2">Send</button> <!--Botão de envio de mensagem-->
+        </div>
+
+            <div>
+                <button class="btn2">Send</button> <!--Botão de envio de mensagem-->
             <!--No adicionar Javascript nessa guia para melhor interação-->
         </div>
 

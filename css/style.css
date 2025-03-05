@@ -50,21 +50,7 @@ a{
 
 
 
-.connect{        /*Centraliza os elementos input e os agrupa*/
-    display: flex;              /*Centraliza os elementos input*/
-    height: 100%;               /*Define a altura do elemento*/
-}
-.connect input{     /*Define o tamanho e a cor do input*/   
-    border: solid 1px #000000;/*Define o tipo da borda, o tamanho e a cor*/
-    border-radius: 5px;         /*Define a curvatura da borda do input*/
-    width: 100%;                /*Define o tamanho do input*/
-    background-color: #ffffff;      
 
-}
-.connect input:hover{  /*Define a cor do input ao passar o mouse*/
-    background-color: #919191;/*Define a cor do input ao passar o mouse*/
-
-}
 
 button{           /*Estiliza o botao*/
     display: flex;              /*Cria um container flexivel*/
@@ -103,26 +89,73 @@ button:hover{     /*Define a cor do botao ao passar o mouse*/
 }
 
 .article1 {
-    flex: 1; /* O conteúdo ocupa 1 fração do espaço disponível */
+    flex: 1;            /* O conteúdo ocupa 1 fração do espaço disponível */
     padding-left: 20px; /* Adiciona um espaçamento à esquerda do conteúdo */
 }
 
 #image-article-1-page-home-1 {
-    width: 50%;        /* Define a largura da imagem */
-    height: auto;  
-    flex: 1;           /* A imagem ocupa 1 fração do espaço disponível */
+    width: 50%;         /* Define a largura da imagem */
+    height: auto;       /* Define a altura da imagem */ 
+    flex: 1;            /* A imagem ocupa 1 fração do espaço disponível */
     padding-left: 10px; /* Adiciona um espaçamento à esquerda do conteúdo */
 }
 
 
 .get-in-touch {         /* Estilização Get-in-touch-home*/
-    margin-top: -18.5px;
+    margin-top: -18.5px;        /* Define a margem superior do bloco */
     background-color: orange;
-    height: 200px;
-    width: 100%;
-    text-align: left;
-    align-content: center;
+    height: 200px;              /* Define a altura do bloco */
+    width: 100%;                /* Define a largura do bloco */
+    text-align: left;           /* Alinha o texto à esquerda */
+    align-content: center;      /* Centraliza o conteúdo */
 }
+
+
+
+
+
+.container {            /* Estilização do contêiner */
+    display: flex;      /* Cria um container flexível */
+    width: 800px;       /* Ajuste a largura conforme necessário */
+    margin: 10px 10px;  /* Espaço entre o contêiner e a borda da tela */
+    height: 100px;      /* Ajuste a altura conforme necessário */
+}
+
+.left-column {          /* Estilização da coluna esquerda */
+    display: flex;      /* Cria um container flexível */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    width: 300px;       /* Ajuste a largura conforme necessário */
+    height: 100px;      /* Ajuste a altura conforme necessário */
+
+}
+
+
+
+.rigth-column {         /* Estilização da coluna direita */
+    display: flex;      /* Cria um container flexível */
+    flex-grow: 1;       /* Permite que a coluna direita ocupe o espaço restante */
+    color: rgb(255, 255, 255);
+    width: 400;         /* Ajuste a largura conforme necessário */
+    height: 100px;      /* Ajuste a altura conforme necessário */
+    margin-left: 10px;  /* Espaço entre as colunas */
+    text-align: center; /* Centraliza o texto no bloco */
+}
+
+
+
+.container input,
+.container textarea {    /* Estilização dos campos de entrada */
+  width: 100%;          /* Faz com que o campo preencha o contêiner */
+  height: 100%;         /* Faz com que o campo preencha o contêiner */
+  box-sizing: border-box; /* Garante que o preenchimento não aumente o tamanho total */
+  padding: 10px;        /* Preenchimento interno do campo */
+  border-radius: 5px;   /* Curvatura da borda do campo */
+  background-color: white; /* Cor de fundo do campo */
+  color: black;       /* Cor do texto do campo */
+}
+
+
+
 
 
 
