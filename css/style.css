@@ -10,26 +10,41 @@ html, body{     /*Define o tamanho da tela*/
 
 
 .menu{      /*Estiliza o menu*/
-    
-    display: flex;      /*Centraliza os elementos do menu*/
-    justify-content: right;        /*Centraliza os elementos do menu*/   
-    background-color: #020202;     /*Define a cor do menu*/
-    color: #0e0d0d;
-    height: auto;       /*Define a altura do menu*/
-    list-style-type: none;      /*Remove a bolinha da lista*/
-    font-size: 20px;    /*Define o tamanho da fonte do menu*/
-  
-  
-    
+    display: flex;                  /*Centraliza os elementos do menu*/
+    justify-content: right;         /*Centraliza os elementos do menu*/  
+    align-items: center;            /* Opcional: centraliza verticalmente */ 
+    background-color: orange;     /*Define a cor do menu*/
+    color: #0e0d0d;             
+    height: auto;                   /*Define a altura do menu*/
+    list-style-type: none;          /*Remove a bolinha da lista*/
+    font-size: 20px;                /*Define o tamanho da fonte do menu*/
+}
+
+.menu ul{
+    align-items: center;
 }
 
 .menu li{     /*Estilizar os elementos LI do menu*/
-    background-color: #ffffff;/*Define a cor de fundo dos elementos LI*/
+    background-color: #000000;/*Define a cor de fundo dos elementos LI*/
     border-radius: 5px;         /*Define a curvatura da borda dos elementos LI*/
     padding: 5px;               /*Define o tamanho do padding dos elementos LI*/
     margin: 10px 20px 10px 20px;/*Define a margem dos elementos LI*/
-    
-    
+    color: #ffffff;
+    font-size: 12px;
+    width: 60px;
+    text-align: center;
+
+}
+
+.menu li:hover{     /*Estilizar os elementos LI do menu*/
+    background-color: #72786e;/*Define a cor de fundo dos elementos LI*/
+}
+
+
+a{
+    color: inherit;         /*Define a cor do link*/
+    text-decoration: none;  /*Remove o sublinhado do link*/
+
 }
 
 
@@ -49,10 +64,7 @@ html, body{     /*Define o tamanho da tela*/
 .connect input:hover{  /*Define a cor do input ao passar o mouse*/
     background-color: #919191;/*Define a cor do input ao passar o mouse*/
 
-
 }
-
-
 
 button{           /*Estiliza o botao*/
     display: flex;              /*Cria um container flexivel*/
@@ -66,53 +78,51 @@ button:hover{     /*Define a cor do botao ao passar o mouse*/
 }
 .btn1{            /*Estiliza o botao Free Consultation*/
     background-color: #000000;/*Define a cor do botao*/
-    border-radius: 0px;        /*Define a curvatura da borda do botao*/
+    border-radius: 5px;        /*Define a curvatura da borda do botao*/
     width: 200px;               /*Define o tamanho do botao*/
     margin: 0 auto;             /*Centraliza o botao*/
     color: #ffffff;
-    
+    font-size: 15px;
     
 }
 .btn2{           /*Estiliza o botao Send*/
-    background-color: #ffffff;/*Define a cor do botao*/
-    border-radius: 10px;        /*Define a curvatura da borda do botao*/
+    background-color: #000000;/*Define a cor do botao*/
+    border-radius: 5px;        /*Define a curvatura da borda do botao*/
     width: 60px;                /*Define o tamanho do botao*/
     margin: 0 auto;             /*Centraliza o botao*/
-}
-
-/* Estilização id-artigo-page-home-1*/
-
-#article-1-page-home-1 {
-background-color:rgb(219, 219, 219);
-text-align: left;
-box-sizing: border-box;
-width: 50%;
-padding: 200px;
+    color: #ffffff;
+    font-size: 15px;
 
 }
-/*Estilizaçao imagem ao lado do article-page-home*/
+
+#article-1-page-home-1 {    /* Estilização id-artigo-page-home-1*/
+    width: 100%;        /* Define a largura do artigo */
+    display: flex;      /* Cria um container flexível */
+    align-items: center; /* Alinha verticalmente os itens */
+    background-color: #72786e;
+}
+
+.article1 {
+    flex: 1; /* O conteúdo ocupa 1 fração do espaço disponível */
+    padding-left: 20px; /* Adiciona um espaçamento à esquerda do conteúdo */
+}
 
 #image-article-1-page-home-1 {
-
-    position: absolute;
-    width: 760px;
-    height: auto;
-    padding: 30px;
-    top: 40px ;
-    right: 0px;
-
+    width: 50%;        /* Define a largura da imagem */
+    height: auto;  
+    flex: 1;           /* A imagem ocupa 1 fração do espaço disponível */
+    padding-left: 10px; /* Adiciona um espaçamento à esquerda do conteúdo */
 }
 
-/* Estilização Get-in-touch-home*/
-.get-in-touch {
 
+.get-in-touch {         /* Estilização Get-in-touch-home*/
+    margin-top: -18.5px;
     background-color: orange;
     height: 200px;
     width: 100%;
     text-align: left;
     align-content: center;
-    padding: 20px;
-
-
-
 }
+
+
+
