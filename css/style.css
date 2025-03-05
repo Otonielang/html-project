@@ -44,7 +44,6 @@ html, body{     /*Define o tamanho da tela*/
 a{
     color: inherit;         /*Define a cor do link*/
     text-decoration: none;  /*Remove o sublinhado do link*/
-
 }
 
 
@@ -57,6 +56,7 @@ button{           /*Estiliza o botao*/
     justify-content: center;    /*Centraliza o botao*/
 
 }
+
 button:hover{     /*Define a cor do botao ao passar o mouse*/
     background-color: #919191;/*Define a cor do botao ao passar o mouse*/
     color: #ffffff;           /*Define a cor da fonte do botao ao passar o mouse*/
@@ -69,16 +69,20 @@ button:hover{     /*Define a cor do botao ao passar o mouse*/
     margin: 0 auto;             /*Centraliza o botao*/
     color: #ffffff;
     font-size: 15px;
+    font-size: 15px;
+    margin-top: 16px;
     
 }
 .btn2{           /*Estiliza o botao Send*/
     background-color: #000000;/*Define a cor do botao*/
     border-radius: 5px;        /*Define a curvatura da borda do botao*/
     width: 60px;                /*Define o tamanho do botao*/
-    margin: 0 auto;             /*Centraliza o botao*/
+    width: 60px;                /*Define o tamanho do botao*/
     color: #ffffff;
     font-size: 15px;
-
+    font-size: 15px;
+    margin-left: 16%;
+    padding: 0 100px;
 }
 
 #article-1-page-home-1 {    /* Estilização id-artigo-page-home-1*/
@@ -111,7 +115,12 @@ button:hover{     /*Define a cor do botao ao passar o mouse*/
 }
 
 
-
+footer{                 /* Estilização do rodapé */
+    background-color: orange;   /* Define a cor de fundo do rodapé */
+    margin-top: 10px;             /* Define a margem superior do rodapé */
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
 
 
 .container {            /* Estilização do contêiner */
