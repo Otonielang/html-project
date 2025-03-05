@@ -1,0 +1,170 @@
+*{              /*Reseta todas as predefinicoes do navegador */
+    margin: 0;
+    padding: 0;
+} 
+
+html, body{     /*Define o tamanho da tela*/
+    height: 100%;
+    width: 100%;
+}
+
+
+.menu{      /*Estiliza o menu*/
+    display: flex;                  /*Centraliza os elementos do menu*/
+    justify-content: right;         /*Centraliza os elementos do menu*/  
+    align-items: center;            /* Opcional: centraliza verticalmente */ 
+    background-color: orange;     /*Define a cor do menu*/
+    color: #0e0d0d;             
+    height: auto;                   /*Define a altura do menu*/
+    list-style-type: none;          /*Remove a bolinha da lista*/
+    font-size: 20px;                /*Define o tamanho da fonte do menu*/
+}
+
+.menu ul{
+    align-items: center;
+}
+
+.menu li{     /*Estilizar os elementos LI do menu*/
+    background-color: #000000;/*Define a cor de fundo dos elementos LI*/
+    border-radius: 5px;         /*Define a curvatura da borda dos elementos LI*/
+    padding: 5px;               /*Define o tamanho do padding dos elementos LI*/
+    margin: 10px 20px 10px 20px;/*Define a margem dos elementos LI*/
+    color: #ffffff;
+    font-size: 12px;
+    width: 60px;
+    text-align: center;
+
+}
+
+.menu li:hover{     /*Estilizar os elementos LI do menu*/
+    background-color: #72786e;/*Define a cor de fundo dos elementos LI*/
+}
+
+
+a{
+    color: inherit;         /*Define a cor do link*/
+    text-decoration: none;  /*Remove o sublinhado do link*/
+}
+
+
+
+
+
+
+button{           /*Estiliza o botao*/
+    display: flex;              /*Cria um container flexivel*/
+    justify-content: center;    /*Centraliza o botao*/
+
+}
+
+button:hover{     /*Define a cor do botao ao passar o mouse*/
+    background-color: #919191;/*Define a cor do botao ao passar o mouse*/
+    color: #ffffff;           /*Define a cor da fonte do botao ao passar o mouse*/
+
+}
+.btn1{            /*Estiliza o botao Free Consultation*/
+    background-color: #000000;/*Define a cor do botao*/
+    border-radius: 5px;        /*Define a curvatura da borda do botao*/
+    width: 200px;               /*Define o tamanho do botao*/
+    margin: 0 auto;             /*Centraliza o botao*/
+    color: #ffffff;
+    font-size: 15px;
+    font-size: 15px;
+    margin-top: 16px;
+    
+}
+.btn2{           /*Estiliza o botao Send*/
+    background-color: #000000;/*Define a cor do botao*/
+    border-radius: 5px;        /*Define a curvatura da borda do botao*/
+    width: 60px;                /*Define o tamanho do botao*/
+    width: 60px;                /*Define o tamanho do botao*/
+    color: #ffffff;
+    font-size: 15px;
+    font-size: 15px;
+    margin-left: 16%;
+    padding: 0 100px;
+}
+
+#article-1-page-home-1 {    /* Estilização id-artigo-page-home-1*/
+    width: 100%;        /* Define a largura do artigo */
+    display: flex;      /* Cria um container flexível */
+    align-items: center; /* Alinha verticalmente os itens */
+    background-color: #72786e;
+}
+
+.article1 {
+    flex: 1;            /* O conteúdo ocupa 1 fração do espaço disponível */
+    padding-left: 20px; /* Adiciona um espaçamento à esquerda do conteúdo */
+}
+
+#image-article-1-page-home-1 {
+    width: 50%;         /* Define a largura da imagem */
+    height: auto;       /* Define a altura da imagem */ 
+    flex: 1;            /* A imagem ocupa 1 fração do espaço disponível */
+    padding-left: 10px; /* Adiciona um espaçamento à esquerda do conteúdo */
+}
+
+
+.get-in-touch {         /* Estilização Get-in-touch-home*/
+    margin-top: -18.5px;        /* Define a margem superior do bloco */
+    background-color: orange;
+    height: 200px;              /* Define a altura do bloco */
+    width: 100%;                /* Define a largura do bloco */
+    text-align: left;           /* Alinha o texto à esquerda */
+    align-content: center;      /* Centraliza o conteúdo */
+}
+
+
+footer{                 /* Estilização do rodapé */
+    background-color: orange;   /* Define a cor de fundo do rodapé */
+    margin-top: 10px;             /* Define a margem superior do rodapé */
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+
+.container {            /* Estilização do contêiner */
+    display: flex;      /* Cria um container flexível */
+    width: 800px;       /* Ajuste a largura conforme necessário */
+    margin: 10px 10px;  /* Espaço entre o contêiner e a borda da tela */
+    height: 100px;      /* Ajuste a altura conforme necessário */
+}
+
+.left-column {          /* Estilização da coluna esquerda */
+    display: flex;      /* Cria um container flexível */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    width: 300px;       /* Ajuste a largura conforme necessário */
+    height: 100px;      /* Ajuste a altura conforme necessário */
+
+}
+
+
+
+.rigth-column {         /* Estilização da coluna direita */
+    display: flex;      /* Cria um container flexível */
+    flex-grow: 1;       /* Permite que a coluna direita ocupe o espaço restante */
+    color: rgb(255, 255, 255);
+    width: 400;         /* Ajuste a largura conforme necessário */
+    height: 100px;      /* Ajuste a altura conforme necessário */
+    margin-left: 10px;  /* Espaço entre as colunas */
+    text-align: center; /* Centraliza o texto no bloco */
+}
+
+
+
+.container input,
+.container textarea {    /* Estilização dos campos de entrada */
+  width: 100%;          /* Faz com que o campo preencha o contêiner */
+  height: 100%;         /* Faz com que o campo preencha o contêiner */
+  box-sizing: border-box; /* Garante que o preenchimento não aumente o tamanho total */
+  padding: 10px;        /* Preenchimento interno do campo */
+  border-radius: 5px;   /* Curvatura da borda do campo */
+  background-color: white; /* Cor de fundo do campo */
+  color: black;       /* Cor do texto do campo */
+}
+
+
+
+
+
+

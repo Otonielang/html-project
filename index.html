@@ -4,81 +4,102 @@
 
 <head> 
     <meta charset="UTF-8">
-
-<title> Pagina Html </title> <!--Titulo da página-->
-<link rel="shortcut icon" href="imagens/html.ico.ico" type="image/x-icon"> <!--Favicon da página home -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pagina Html </title> <!--Titulo da página-->
+    <link rel="shortcut icon" href="imagens/html.ico.ico" type="image/x-icon"> <!--Favicon da página home -->
+    <link rel="stylesheet" href="css/style.css"> <!--CSS external file-->
 </head>
+
+
+
+
+
 
 <body>
 
-<!--Inicio da paginaçao-->
-<header> <!--Estrutura de cabeçalho de navegação-->
-    <nav> <!--Estrutura de navegação-->
-    <p><a href="home.html">Home</a></p>
-    <p><a href="about.html">About</a></p>
-    <p><a href="pricing.html">Pricing</a></p>
-    <p><a href="contact.html">Contact</a></p>
-    </nav>
-</header>
+    <!--Inicio da paginaçao-->
+    <header> <!--Estrutura de cabeçalho de navegação-->
+        <nav> <!--Estrutura de navegação-->
+            <ul class="menu"> <!--Lista de navegação-->
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<article> <!--tag-semantica para o bloco artigo-->
-    <h1> Who we are </h1>
+    <article id="article-1-page-home-1"> <!--tag-semantica para o bloco artigo-->
+        <div class="article1">
 
-    <h3>Empowering Your Business Sucess</h3>
+            <h1> Who we are </h1>
+
+            <h3>Empowering Your Business Sucess</h3>
+
+            <p>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur pariatur quam consequuntur deserunt beatae aliquid nulla possimus sint eos corporis sunt suscipit,
+                quo dolor cupiditate, provident at hic et quibusdam?</p>
+                
+                <!--Aqui precisa ser adicionado um botão "Free Consultation"-->
+            <button class="btn1">Free Consultation</button>  
+
+        </div>
+
+        <img id="image-article-1-page-home-1" class="article2" src="imagens/imagem-reuniao.jpg" alt="Business-Image" >  <!--Imagem de apoio ao texto, depois diminuir o tamanho do arquivo via gimp-->
 
 
-    <p1>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur pariatur quam consequuntur deserunt beatae aliquid nulla possimus sint eos corporis sunt suscipit,
-        quo dolor cupiditate, provident at hic et quibusdam?</p1>
-        
-        <!--Aqui precisa ser adicionado um botão "Free Consultation"-->
+    
+</article class="get-in-touch">
 
-</article>
+    <br> <!--Quebra de linha-->
+    
+    <section class="get-in-touch"> <!--Sessão diferente para o bloco get-in-touch-->
 
-<br> <!--Quebra de linha-->
+        <h2> Get in Touch with US</h2>
+        <!--Adicionar um botão com Javascritp mais tarde-->
 
-<img src="imagens/imagem-reuniao.jpg" alt="Business-Image" width="500px">  <!--Imagem de apoio ao texto, depois diminuir o tamanho do arquivo via gimp-->
-<hr> <!--Linha Horizontal na página (retirar no momento da estilização)-->
+    </section>
 
-<section class="Get-in-Touch"> <!--Sessão diferente para o bloco get-in-touch-->
+    <section> <!--Section About US-->
+        <h3> About US </h3>
+        <h2>Strategic Solutions for Business Growth</h2>
 
-<h2> Get in Touch with US</h2>
-<!--Adicionar um botão com Javascritp mais tarde-->
+        <nav>
+            <article>
+                <ul><h3>Strategy</h3></ul> 
+                
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsam commodi minima cumque, consectetur veritatis quo eaque expedita repudiandae velit adipisci eius ipsum rem, obcaecati iusto. Eos eveniet totam ab.
+            </article>
+            <article>
+                <ul><h3>Operations<h3></ul>
+                    
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reiciendis hic, quisquam beatae quos fuga placeat aliquam error eius sapiente id, nihil quae tenetur rerum similique minus itaque non dolorum.
+            </article>
+            <article>
+                <ul><h3>Finance<h3></ul>
+                    
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quaerat, facere in, voluptatum exercitationem maiores debitis quibusdam ea natus, omnis veniam consectetur mollitia. Autem quas ducimus magni molestias soluta consequatur.
+            </article>
+        </nav>
 
-</section>
+    </section>
 
-<section> <!--Section About US-->
- <h3> About US </h3>
- <h2>Strategic Solutions for Business Growth</h2>
 
- <nav>
-    <article>
-        <ul><h3>Strategy</h3></ul> 
-        
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsam commodi minima cumque, consectetur veritatis quo eaque expedita repudiandae velit adipisci eius ipsum rem, obcaecati iusto. Eos eveniet totam ab.
-    </article>
-    <article>
-        <ul><h3>Operations<h3></ul>
-            
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reiciendis hic, quisquam beatae quos fuga placeat aliquam error eius sapiente id, nihil quae tenetur rerum similique minus itaque non dolorum.
-    </article>
-    <article>
-        <ul><h3>Finance<h3></ul>
-            
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quaerat, facere in, voluptatum exercitationem maiores debitis quibusdam ea natus, omnis veniam consectetur mollitia. Autem quas ducimus magni molestias soluta consequatur.
-    </article>
-</nav>
+    <footer>
+        <div>
+            <h2>Let's connect</h2>
+            <div class="container">
+                <div class="left-column">
+                    <input type="text" placeholder=" Your name">
+                    <input type="email" placeholder=" Your e-mail">                    </div>
+                <div class="rigth-column">
+                    <input type="text" placeholder=" Your message">
+                </div>
+            </div>
+        </div>
 
- </section>
-
-<footer>
-    <div>
-         <h2>Let's connect</h2>
-         <!--Necessário inserir algumas box e um possível formulário-->
-         <!--No adicionar Javascript nessa guia para melhor interação-->
-    </div>
-
-</footer>
+        <button class="btn2">Send</button> <!--Botão de envio de mensagem-->
+        <!--No adicionar Javascript nessa guia para melhor interação-->
+    </footer>
 
 </body>
 
